@@ -1,0 +1,15 @@
+{
+  "short_name": "Hogwarts Study Tracker",
+  "name": "Hogwarts Study Tracker - 12-Week Mastery Plan",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#d4af37",
+  "background_color": "#1a0f0f"
+} 

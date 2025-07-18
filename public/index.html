@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2c1810" />
+    <meta
+      name="description"
+      content="Hogwarts Study Tracker - Master your 12-week programming journey with Harry Potter magic"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Harry Potter Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Magic Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>Hogwarts Study Tracker - Master Your Programming Journey</title>
+    
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Crimson Text', serif;
+        background: linear-gradient(135deg, #1a0f0f 0%, #2c1810 50%, #3d2a1a 100%);
+        color: #f4f1de;
+        overflow-x: hidden;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #2c1810;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #8b7355;
+        border-radius: 6px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a0522d;
+      }
+      
+      /* Loading animation */
+      .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #1a0f0f 0%, #2c1810 50%, #3d2a1a 100%);
+      }
+      
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #8b7355;
+        border-top: 3px solid #d4af37;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </body>
+</html> 
